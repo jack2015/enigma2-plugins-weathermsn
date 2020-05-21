@@ -389,8 +389,12 @@ class WeatherMSN(ConfigListScreen, Screen):
 
 		self.time_update = 30
 		self.language = config.osd.language.value.replace('_', '-')
-		if self.language == 'en-EN':
+		if self.language == 'en-EN': # hack
 			self.language = 'en-US'
+		elif self.language == 'zh-CN': # hack
+			self.language = 'en-US'
+		elif self.language == "no-NO": # hack
+			self.language = "nn-NO"
 		self.city = config.plugins.weathermsn.city.value
 		self.degreetype = config.plugins.weathermsn.degreetype.value
 		self.windtype = config.plugins.weathermsn.windtype.value
@@ -2698,8 +2702,12 @@ class ConfigWeatherMSN(ConfigListScreen, Screen):
 		self.pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/components/"
 		self.city = config.plugins.weathermsn.city.value
 		self.language = config.osd.language.value.replace('_', '-')
-		if self.language == 'en-EN':
+		if self.language == 'en-EN': # hack
 			self.language = 'en-US'
+		elif self.language == 'zh-CN': # hack
+			self.language = 'en-US'
+		elif self.language == "no-NO": # hack
+			self.language = "nn-NO"
 		self.degreetype = config.plugins.weathermsn.degreetype.value
 		self.windtype = config.plugins.weathermsn.windtype.value
 		self.converter = config.plugins.weathermsn.converter.value
