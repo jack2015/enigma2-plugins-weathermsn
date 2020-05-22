@@ -392,7 +392,7 @@ class WeatherMSN(ConfigListScreen, Screen):
 		if self.language == 'en-EN': # hack
 			self.language = 'en-US'
 		elif self.language == 'zh-CN': # hack
-			self.language = 'en-US'
+			self.language = 'zh-CH'
 		elif self.language == "no-NO": # hack
 			self.language = "nn-NO"
 		self.city = config.plugins.weathermsn.city.value
@@ -2705,7 +2705,7 @@ class ConfigWeatherMSN(ConfigListScreen, Screen):
 		if self.language == 'en-EN': # hack
 			self.language = 'en-US'
 		elif self.language == 'zh-CN': # hack
-			self.language = 'en-US'
+			self.language = 'zh-CH'
 		elif self.language == "no-NO": # hack
 			self.language = "nn-NO"
 		self.degreetype = config.plugins.weathermsn.degreetype.value
